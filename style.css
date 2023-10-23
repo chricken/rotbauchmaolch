@@ -1,53 +1,80 @@
+/* Allgemeine Stile */
 body {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-  }
-  
-  header {
-    background-color: #212121;
-    color: white;
-    height: 100px;
+}
+
+/* Header */
+header {
+    background-color: #333;
     padding: 20px;
-  }
-  
-  h1 {
-    font-size: 40px;
-  }
-  
-  nav {
-  }
-  
-  a {
-    color: white;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-  }
-  
-  a:hover {
-    color: #f00;
-  }
-  
-  main {
-    margin-top: 100px;
-  }
-  
-  section {
-    padding: 20px;
-  }
-  
-  h2 {
-    font-size: 20px;
-  }
-  
-  img {
-    max-width: 100%;
-  }
-  
-  footer {
-    background-color: #212121;
-    color: white;
-    height: 50px;
+}
+
+/* Abschnitte */
+section {
+    padding: 50px;
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Galerie */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+}
+
+/* Kontaktformular */
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+    width: 100%;
     padding: 10px;
+    margin-bottom: 20px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
     text-align: center;
-  }
-  
+}
